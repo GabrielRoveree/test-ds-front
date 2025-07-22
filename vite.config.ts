@@ -6,7 +6,10 @@ import dts from 'vite-plugin-dts'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), dts()],
+  plugins: [react(), tailwindcss(), dts({
+    include: ['src'],
+    insertTypesEntry: true, // adiciona `export * from "./src"` em index.d.ts
+  })],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
