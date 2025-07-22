@@ -1,1 +1,1 @@
-export { SimpleText } from './components/atoms/SimpleText'
+export * from "./components/atoms/SimpleText"
