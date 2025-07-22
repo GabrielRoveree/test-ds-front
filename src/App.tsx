@@ -1,5 +1,4 @@
 import './App.css'
-export { SimpleText } from '@/components/atoms/SimpleText'
 
 function App() {
 
